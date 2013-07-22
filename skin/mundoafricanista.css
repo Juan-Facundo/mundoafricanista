@@ -1,0 +1,84 @@
+body {
+  background-image: url('images/ogum-lamp.jpg');
+  background-size: 100% auto;
+  background-repeat: no-repeat;
+  width: 100%;
+  overflow: hidden;
+}
+
+div.jp-audio {
+  margin: 130px 0px 0px;
+  color: black;
+  border: 2px solid black;
+}
+
+div#jp_container_1.jp-audio {
+  background-color: transparent;
+}
+
+div.jp-type-single {
+  position: relative;
+}
+
+div.jp-type-single .metadata {
+  position: absolute;
+  width: 225px;
+  left: 65px;
+  top: 10px;
+  background-color: rgba(0,0,0,0.5);
+  padding: 5px;
+  border: 1px solid grey;
+  color: white;
+  height: 50px;
+  overflow: hidden;
+  z-index: 5;
+}
+
+div.jp-type-single .metadata p {
+  font-size: 11px;
+  line-height: 11px;
+  margin: 0px 0px 5px;
+  padding: 0px;
+}
+
+div#jp_container_1.jp-audio div.jp-interface {
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+div#jp_container_1.jp-audio div.jp-title, div.jp-playlist {
+  background-color: rgba(80, 0, 0, 0.4);
+}
+
+div#new_window {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+
+div.jp-gui.jp-interface div.jp-time-holder {
+  right: 14px;
+  left: auto !important;
+  width: 50px !important;
+  text-shadow: 1px 1px #a55;
+}
+
+div.jp-title ul li {
+  color: black;
+  text-shadow: 1px 1px red;
+}
+
+div.jp-audio div.jp-type-single a.jp-mute, div.jp-audio div.jp-type-single a.jp-unmute {
+  margin-left: 248px;
+}
+@media screen and (max-width: 540px) {
+
+  div.jp-audio {
+    margin: 20px auto 0px;
+  }
+
+  div#new_window {
+    display: none;
+  }
+
