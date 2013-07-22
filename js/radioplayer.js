@@ -41,15 +41,15 @@
       window.open('http://radio.mundoafricanista.com.ar', 'Radio','width=500, height=300' );
     });
 
-    var escuchar = $('a.escuchar');
-    escuchar.on('click', function(ev){
+    var play = $('li.rp-play a');
+    play.on('click', function(ev){
       ev.preventDefault();
       player.src=source;
       player.play();
     });
 
-    var parar = $('a.parar');
-    parar.on('click', function(ev){
+    var stop = $('li.rp-stop a');
+    stop.on('click', function(ev){
       ev.preventDefault();
       player.src='';
     });

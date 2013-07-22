@@ -23,7 +23,7 @@ div.jp-type-single {
 div.jp-type-single .metadata {
   position: absolute;
   width: 225px;
-  left: 65px;
+  left: 85px;
   top: 10px;
   background-color: rgba(0,0,0,0.5);
   padding: 5px;
@@ -72,6 +72,49 @@ div.jp-title ul li {
 div.jp-audio div.jp-type-single a.jp-mute, div.jp-audio div.jp-type-single a.jp-unmute {
   margin-left: 248px;
 }
+
+ul.rp-controls {
+  width: 76px;
+  height: 64px;
+  margin: 0px;
+  padding: 8px 5px;
+}
+
+ul.rp-controls li {
+  background-image: url('rplayer.png');
+  text-indent: -9999px;
+  list-style: none;
+  height: 40px;
+  width: 40px;
+  float: left;
+  margin: 1px;
+}
+
+ul.rp-controls li.rp-stop {
+  width: 28px;
+  height: 28px;
+  background-position: 0px -84px;
+  margin: 7px 3px;
+}
+
+ul.rp-controls li.rp-Vol,ul.rp-controls li.rp-vol {
+  width: 18px;
+  height: 16px;
+  margin: 5px 10px;
+  background-position: 0 -169px;
+}
+
+ul.rp-controls li.rp-Vol {
+  background-position: 0 -185px;
+}
+
+ul.rp-controls li a {
+  display: block;
+  outline: none;
+  width: 100%;
+  height: 100%;
+  }
+
 @media screen and (max-width: 540px) {
 
   div.jp-audio {
