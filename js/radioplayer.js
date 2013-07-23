@@ -18,16 +18,27 @@
         var source = source2;
       }
       //insertamos fuente y reproducimos
-      player.src=source;
-      player.play();
+      var start_player = function() {
+        player.src=source;
+        player.play();
       //console.log("fuente: ", source);
+      }
+      var stop_player = function() {
+        player.src='';
+      }
       }
     else {
       //lanzamos reproductor flash
       //alert("html5 audio not supported!");
+      var start_player = function() {
       instance3.playSound();
+      }
+      var stop_player = function() {
+      instance3.stopSound();
+      }
     }
 
+    start_player();
     // intervalo de refresco de metadatos
     var tid = setInterval(metadata, 25000);
 
@@ -44,14 +55,19 @@
     var play = $('li.rp-play a');
     play.on('click', function(ev){
       ev.preventDefault();
-      player.src=source;
-      player.play();
+      start_player();
     });
 
     var stop = $('li.rp-stop a');
     stop.on('click', function(ev){
       ev.preventDefault();
-      player.src='';
+      stop_player();
+    });
+
+    var listen = $('a.escuchar');
+    listen.on('click', function(ev){
+      ev.preventDefault();
+      start_player();
     });
 
     function metadata(){

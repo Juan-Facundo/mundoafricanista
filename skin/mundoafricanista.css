@@ -10,6 +10,7 @@ div.jp-audio {
   margin: 130px 0px 0px;
   color: black;
   border: 2px solid black;
+  width: 340px;
 }
 
 div#jp_container_1.jp-audio {
@@ -124,4 +125,32 @@ ul.rp-controls li a {
   div#new_window {
     display: none;
   }
+}
 
+@media screen and (max-width : 320px) {
+  body {
+    margin: 0px;
+  }
+
+  div.jp-type-single .metadata {
+    width: 200px;
+    height: 60px;
+    left: 10px;
+  }
+
+  ul.rp-controls {
+    width: 152px;
+    position: absolute;
+    top:  80px;
+    left: 20px;
+  }
+
+  div#jp_container_1.jp-audio div.jp-interface {
+    height: 130px;
+  }
+  
+  div#jp_container_1.jp-audio {
+    width: 230px;
+    margin: 5px auto;
+  }
+}
