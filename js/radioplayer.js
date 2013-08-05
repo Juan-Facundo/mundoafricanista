@@ -55,6 +55,7 @@
       ev.preventDefault();
       window.resizeTo(400,250);
       window.moveTo(screen.width/2-200,screen.height/2-125);
+      detach.remove();
       $('#botones a.quienes').css('display','block');
       $('#botones a.cerrar').css('display','none');
       $('#desplegable').css('display','none');

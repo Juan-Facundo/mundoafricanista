@@ -14,7 +14,7 @@
 
     <!--[if lte IE 8]>
       <style type='text/css'>
-        div.jp-type-single .metadata {
+        .mie8 {
           background-color: grey;
         }
       </style>
@@ -22,6 +22,10 @@
 
   </head>
   <body>
+
+    <div id="fondo">
+        <img src="images/fondo.jpg" alt="" />
+    </div>
 
     <audio id="reproductor" autoplay>
       <source src="http://giss.tv:8000/chaotic.mp3" type="audio/mpeg" />
@@ -51,8 +55,8 @@
   </div>
 
   <div id="botones">
-    <a href="#" class="quienes">Que es?</a>
-    <a href="#" class="cerrar" style="display:none;">cerrar</a>
+    <a href="#" class="quienes mie8">Que es?</a>
+    <a href="#" class="cerrar mie8" style="display:none;">cerrar</a>
   </div>
 
 <object id="instance3" classid="clsid:D27CDB6E-AE6D-11cf-96B8-444553540000" width="1" height="1" bgcolor="#FFFFFF">
@@ -114,7 +118,7 @@
 </script>
 
 
-<div id="desplegable" style="margin: 0px auto; padding: 10px; display:none;"></div>
+<div id="desplegable" class="mie8" style="margin: 0px auto; padding: 10px; display:none;"></div>
 
 </body>
 </html>

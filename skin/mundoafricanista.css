@@ -1,10 +1,25 @@
 body {
-  background-image: url('images/ogum-lamp.jpg');
-  background-size: 100% auto;
-  background-repeat: no-repeat;
   width: 100%;
   overflow: hidden;
   margin: 0px;
+}
+
+#fondo {
+  position: fixed; 
+  top: -50%; 
+  left: -50%; 
+  width: 200%; 
+  height: 200%;
+}
+#fondo img {
+  position: absolute; 
+  top: 0; 
+  left: 0; 
+  right: 0; 
+  bottom: 0; 
+  margin: auto; 
+  min-width: 50%;
+  min-height: 50%;
 }
 
 div.jp-audio {
@@ -26,7 +41,9 @@ body #desplegable {
 #botones a {
 display: block;
 margin: 10px auto;
-width: 55px;
+width: 65px;
+font-size: 12px;
+line-height: 12px;
 text-align: center;
 padding: 5px;
 background-color: rgba(125,0,0,0.8);
