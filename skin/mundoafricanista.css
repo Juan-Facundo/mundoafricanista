@@ -4,13 +4,40 @@ body {
   background-repeat: no-repeat;
   width: 100%;
   overflow: hidden;
+  margin: 0px;
 }
 
 div.jp-audio {
-  margin: 130px 0px 0px;
+  margin: 30px auto 10px;
   color: black;
   border: 2px solid black;
   width: 340px;
+}
+
+body #desplegable {
+  background-color: rgba(0,0,0,0.8);
+  padding: 5px;
+  border: 1px solid grey;
+  color: white;
+  overflow: hidden;
+  font-size: 12px;
+  z-index: 5;
+}
+#botones a {
+display: block;
+margin: 10px auto;
+width: 55px;
+text-align: center;
+padding: 5px;
+background-color: rgba(125,0,0,0.8);
+text-decoration: none;
+color: white;
+font-weight: bold;
+border-radius: 5px 15px;
+}
+
+#botones a:hover {
+  color: black;
 }
 
 div#jp_container_1.jp-audio {

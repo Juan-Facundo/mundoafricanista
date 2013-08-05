@@ -34,7 +34,31 @@
       ev.preventDefault();
       detach.remove();
       stop_player();
-      window.open('http://radio.mundoafricanista.com.ar', 'Radio','width=500, height=300' );
+      window.open('http://radio.mundoafricanista.com.ar', 'Radio','width=400, height=250' );
+    });
+
+    var quienes = $('a.quienes');
+    quienes.on('click', function(ev){
+      ev.preventDefault();
+      window.resizeTo(400,420);
+      window.moveTo(screen.width/2-200,screen.height/2-210);
+      $('#botones a.quienes').css('display','none');
+      $('#botones a.cerrar').css('display','block');
+      $.ajax({
+        type: 'GET',
+        url: 'quienes.html',
+      }).done(insDesplegable);
+    });
+
+    var cerrar = $('#botones a.cerrar');
+    cerrar.on('click', function(ev){
+      ev.preventDefault();
+      window.resizeTo(400,250);
+      window.moveTo(screen.width/2-200,screen.height/2-125);
+      $('#botones a.quienes').css('display','block');
+      $('#botones a.cerrar').css('display','none');
+      $('#desplegable').css('display','none');
+      $('#desplegable').empty();
     });
 
     var play = $('li.rp-play a');
@@ -55,6 +79,11 @@
         url: 'titulo.html',
         cache:false
       }).done(renderResponse);
+    }
+
+    function insDesplegable(content){
+      $('#desplegable').css('display','block');
+      $('#desplegable').append(content);
     }
 
     function renderResponse(html){
