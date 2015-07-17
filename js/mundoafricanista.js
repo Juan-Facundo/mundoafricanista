@@ -12,7 +12,7 @@
       // en la linea siguiente, paramos la descarga de streaming
       $("#jquery_jplayer_1").jPlayer( "clearMedia" );
       ev.preventDefault();
-      window.open('http://radio.mundoafricanista.com.ar', 'Radio','width=500, height=300' );
+      window.open('http://mundoafricanista.com.ar', 'Radio','width=500, height=300' );
     });
 
 

@@ -34,7 +34,7 @@
       ev.preventDefault();
       detach.remove();
       stop_player();
-      window.open('http://radio.mundoafricanista.com.ar', 'Radio','width=400, height=250' );
+      window.open('http://mundoafricanista.com.ar', 'Radio','width=400, height=250' );
     });
 
     var quienes = $('a.quienes');
